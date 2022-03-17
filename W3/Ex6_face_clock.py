@@ -1,4 +1,5 @@
 import turtle
+from time import sleep
 
 
 def draw_face_clock():
@@ -8,30 +9,26 @@ def draw_face_clock():
     t = turtle.Turtle()
     t.shape("turtle")
     t.color("blue")
+    t.pensize(4)
+    t.speed(10)
+
+    angle = 30
 
     for i in range(12):
-        tool(90 + (i / 12 * 360))
+        t.left(angle)
+
+        t.up()
+        t.forward(150)
+        t.down()
+
+        t.forward(10)
+        t.up()
+
+        t.forward(20)
+        t.stamp()
+        t.backward(180)
 
     win.exitonclick()
-
-
-def tool(degree):
-    tur = turtle.Turtle()
-    tur.shape("turtle")
-    tur.color("blue")
-    tur.pensize(4)
-    tur.speed(10)
-
-    tur.left(degree)
-
-    tur.up()
-    tur.forward(150)
-    tur.down()
-
-    tur.forward(10)
-    tur.up()
-
-    tur.forward(20)
 
 
 if __name__ == '__main__':
