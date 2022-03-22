@@ -5,3 +5,4 @@ def is_even(n):
 if __name__ == '__main__':
     print(is_even(8))
     print(is_even(3))
+    print(is_even(0))
