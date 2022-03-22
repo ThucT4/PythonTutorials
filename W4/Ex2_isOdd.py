@@ -1,5 +1,8 @@
+from Ex1_isEven import is_even
+
+
 def is_odd(n):
-    return n % 2 != 0
+    return not is_even(n)
 
 
 if __name__ == '__main__':
