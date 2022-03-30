@@ -74,7 +74,7 @@ def cal_Collatz_sequence2(start, end):
 
     # 3. Which numbers take exactly the same number of steps to reach 1 as the number itself.
     numbers = []
-1
+
     for i in range(start, end + 1):
         cur_step = 0  # Initial value to count
         cur_num = i  # 2. Save the current initial value

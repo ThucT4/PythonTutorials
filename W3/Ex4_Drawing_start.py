@@ -5,7 +5,6 @@ def draw_start():
     win = turtle.Screen()
 
     tur = turtle.Turtle()
-    tur = turtle.Turtle()
     tur.pensize(5)
     tur.speed(8)
 
