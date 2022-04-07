@@ -1,5 +1,6 @@
 import string
 
+
 def remove_char(s, ch):
     return s.replace(ch, '')
 
