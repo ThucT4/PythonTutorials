@@ -10,20 +10,14 @@ def print_2D_array1(x, y):
 
         arr += [row]
 
-    for i in range(len(arr)):
-        print(arr[i], end='')
-
-        if i != len(arr) - 1:
-            print(',', end='')
-
-        print()
+    print(*arr, sep=',\n')
 
 
 # Nested list comprehension
 def print_2D_array2(x, y):
     arr = [[X * Y for Y in range(y)] for X in range(x)]
 
-    print(arr)
+    print(*arr, sep=',\n')
 
 
 if __name__ == '__main__':
